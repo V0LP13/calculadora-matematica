@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  min-height: 100vh;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 650px;
+  background: white;
+  padding: 35px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.descricao {
+  text-align: center;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.formula {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.lista {
+  background: #f7f7f7;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+}
+
+.lista h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.lista p {
+  color: #666;
+  line-height: 1.6;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input {
+  width: 100%;
+  padding: 13px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+}
+
+input:focus {
+  border-color: #222;
+}
+
+.botoes {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  flex: 1;
+  padding: 13px;
+  border: none;
+  border-radius: 8px;
+  background: #222;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button.limpar {
+  background: #777;
+}
+
+.mensagem {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fee2e2;
+  color: #dc2626;
+  text-align: center;
+  font-weight: bold;
+}
+
+.resultado {
+  margin-top: 20px;
+  padding: 18px;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.resultado.alto {
+  color: #4ade80;
+  border-color: #4ade80;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 25px 20px;
+  }
+
+  .botoes {
+    flex-direction: column;
+  }
+}
